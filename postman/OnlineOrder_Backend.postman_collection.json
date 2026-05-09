@@ -1,0 +1,76 @@
+{
+  "info": {
+    "name": "Online Order Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "Signup",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"demo@example.com\",\n  \"password\": \"password\",\n  \"first_name\": \"Demo\",\n  \"last_name\": \"User\"\n}"
+        },
+        "url": "{{baseUrl}}/signup"
+      }
+    },
+    {
+      "name": "Restaurants",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/restaurants/menu"
+      }
+    },
+    {
+      "name": "Restaurant Menu",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/restaurant/1/menu"
+      }
+    },
+    {
+      "name": "Add To Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"menu_id\": 1\n}"
+        },
+        "url": "{{baseUrl}}/cart"
+      }
+    },
+    {
+      "name": "Cart",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/cart"
+      }
+    },
+    {
+      "name": "Checkout",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/cart/checkout"
+      }
+    }
+  ]
+}
