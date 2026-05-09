@@ -21,7 +21,7 @@ Spring Boot backend for the Online Order portfolio project. The deployed version
 - H2 database for demo mode
 - Gradle wrapper
 - Docker, Google Cloud Build, Google Cloud Run
-- Postman collection for API testing
+- API testing via local Postman workspace
 
 ## Project Structure
 
@@ -39,8 +39,6 @@ OnlineOrder_Backend/
     public/
   docs/
     configuration.md
-  postman/
-    OnlineOrder_Backend.postman_collection.json
   Dockerfile
   cloudbuild.yaml
   docker-compose.yml
@@ -147,10 +145,10 @@ The current portfolio deployment uses `demo` mode to avoid Cloud SQL monthly cos
 
 ## Postman
 
-Import:
+Use the local Postman workspace collection:
 
 ```text
-postman/OnlineOrder_Backend.postman_collection.json
+202409 OnlineOrder - Coding Pad API Tests
 ```
 
 Suggested variables:
@@ -163,6 +161,12 @@ For Cloud Run:
 
 ```text
 baseUrl=https://onlineorder-gb7rmueyna-uc.a.run.app
+```
+
+The repo-exported backup copy is stored outside GitHub at:
+
+```text
+/Users/junliu/CourseArtifacts/postman/project-exported/OnlineOrder_Backend.postman_collection.json
 ```
 
 ## Frontend Pairing
