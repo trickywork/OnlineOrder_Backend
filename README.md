@@ -1,5 +1,7 @@
 # Online Order Backend
 
+[![CI](https://github.com/trickywork/OnlineOrder_Backend/actions/workflows/ci.yml/badge.svg)](https://github.com/trickywork/OnlineOrder_Backend/actions/workflows/ci.yml)
+
 Spring Boot backend for the Online Order portfolio project. The deployed version also serves the production React build from the frontend repo, so the Cloud Run URL demonstrates the complete ordering flow in one low-cost service.
 
 ## Live Demo
@@ -148,7 +150,7 @@ The current portfolio deployment uses `demo` mode to avoid Cloud SQL monthly cos
 Use the local Postman workspace collection:
 
 ```text
-202409 OnlineOrder - Coding Pad API Tests
+Online Order - Portfolio API Smoke Tests
 ```
 
 Suggested variables:
@@ -163,18 +165,13 @@ For Cloud Run:
 baseUrl=https://onlineorder-gb7rmueyna-uc.a.run.app
 ```
 
-The repo-exported backup copy is stored outside GitHub at:
-
-```text
-/Users/junliu/CourseArtifacts/postman/project-exported/OnlineOrder_Backend.postman_collection.json
-```
+The exported backup copy is kept in a private local archive outside this public repo.
 
 ## Frontend Pairing
 
 Development frontend repo:
 
 ```text
-/Users/junliu/git_repo/OnlineOrder_Frontend
 https://github.com/trickywork/OnlineOrder_Frontend
 ```
 

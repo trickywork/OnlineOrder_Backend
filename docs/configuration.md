@@ -52,7 +52,7 @@ Seed data includes restaurants and menu items for the demo UI.
 No Docker database required:
 
 ```bash
-cd /Users/junliu/git_repo/OnlineOrder_Backend
+cd OnlineOrder_Backend
 SPRING_PROFILES_ACTIVE=demo ./gradlew bootRun
 ```
 
@@ -69,7 +69,7 @@ Data resets on restart.
 Start Postgres:
 
 ```bash
-cd /Users/junliu/git_repo/OnlineOrder_Backend
+cd OnlineOrder_Backend
 docker compose up -d db
 ```
 
@@ -117,7 +117,7 @@ For first-time schema creation, set `INIT_DB=always` once, verify the tables, th
 Postman collection:
 
 ```text
-postman/OnlineOrder_Backend.postman_collection.json
+Online Order - Portfolio API Smoke Tests
 ```
 
 Variables:
