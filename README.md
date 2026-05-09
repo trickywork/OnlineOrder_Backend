@@ -80,6 +80,10 @@ SPRING_PROFILES_ACTIVE=demo ./gradlew test --no-daemon
 
 Import `postman/OnlineOrder_Backend.postman_collection.json` into Postman. Change `baseUrl` to the Cloud Run URL when testing the deployed version.
 
+## Configuration Notes
+
+Non-code setup is documented in `docs/configuration.md`, including H2 demo mode, local PostgreSQL with Docker Compose, Cloud SQL variables, schema/init SQL, and Cloud Run settings.
+
 ## Cloud Run Deployment
 
 The repo includes `Dockerfile` and `cloudbuild.yaml`.
