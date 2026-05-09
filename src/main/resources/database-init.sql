@@ -65,7 +65,7 @@ CREATE TABLE authorities
     id        SERIAL PRIMARY KEY NOT NULL,
     email     TEXT               NOT NULL,
     authority TEXT               NOT NULL,
-    CONSTRAINT fk_customer FOREIGN KEY (email) REFERENCES customers (email) ON DELETE CASCADE
+    CONSTRAINT fk_authorities_customer FOREIGN KEY (email) REFERENCES customers (email) ON DELETE CASCADE
 );
 
 

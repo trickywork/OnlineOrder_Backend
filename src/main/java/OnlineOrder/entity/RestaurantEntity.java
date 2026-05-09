@@ -2,15 +2,16 @@ package OnlineOrder.entity;
 
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 
 @Table("restaurants")
 public record RestaurantEntity(
-        @Id Long id,
-        String name,
-        String address,
-        String phone,
-        String imageUrl
+        @Id @Column("id") Long id,
+        @Column("name") String name,
+        @Column("address") String address,
+        @Column("phone") String phone,
+        @Column("image_url") String imageUrl
 ) {
 }
