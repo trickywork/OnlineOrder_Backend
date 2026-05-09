@@ -6,7 +6,7 @@ Spring Boot backend for the Online Order portfolio project. The deployed version
 
 - Portfolio URL: `https://onlineorder.junliu.dev`
 - Cloud Run service: `onlineorder`
-- Cloud Run URL: `https://onlineorder-888561484971.us-central1.run.app`
+- Cloud Run URL: `https://onlineorder-gb7rmueyna-uc.a.run.app`
 - Google Cloud project: `caramel-vim-441513-e1`
 - Region: `us-central1`
 
@@ -162,7 +162,7 @@ baseUrl=http://localhost:8080
 For Cloud Run:
 
 ```text
-baseUrl=https://onlineorder-888561484971.us-central1.run.app
+baseUrl=https://onlineorder-gb7rmueyna-uc.a.run.app
 ```
 
 ## Frontend Pairing
